@@ -29,7 +29,7 @@ int main()
 { 
 int count=0;
 
-namedWindow("HEYO", CV_WINDOW_AUTOSIZE);
+namedWindow("Motion Estimation", CV_WINDOW_AUTOSIZE);
 
 cv::String path( "/home/owner/Desktop/Opencv_DIP/CamSeq01/*.png"); 
 vector<cv::String> fn;
@@ -83,7 +83,7 @@ KeyPoint::convert(kp, points[1]);
 { cout<<points[0][j]<<"\n";
 }
 */
-imshow("HEYO", image);
+imshow("Motion Estimation", image);
 c = (char)waitKey(50);
 }
 
@@ -139,7 +139,7 @@ line(image, points[0][j], points[1][j], Scalar(0,255,0), 2, 4, 0);
 }
 
 
-imshow("HEYO", image);
+imshow("Motion Estimation", image);
 c = (char)waitKey(50);
 }
 
